@@ -1,66 +1,35 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="jquery-ui.css" />
-    <script src="d3.v2.js"></script>
-    <script src="jquery-1.8.2.js"></script>
-    <script src="jquery-ui.js"></script>
-    <script src="jquery.fireEvent.js"></script> <!-- fix D3/jQuery interoperability issues -->
-    <script src="ultbuttons.js"></script> <!-- fix jQuery UI bug with checkbox buttons -->
-    <!-- our stuff -->
-    <script src="pforce.js"></script>
-    <script src="vector.js"></script>
-    <script src="util.js"></script>
-    <script src="metromap.js"></script>
-    <script src="slideshow.js"></script>
-    <script src="debug.js"></script>
-    <style>
-      body {font-family:'Times New Roman'}
-      #debug-container {margin:0 1em;}
-      #debug-container td {padding: 0 0.5em;}
-      #fulltext {min-width:600px;padding-left:2em;vertical-align:top;}
-      #svg-container {height:600px}
-      .ui-button {font-size:0.7em; }
-      .controls {height:1em}
-      .controls td {padding: 0 0.5em 0 0;}
-      .controls .ui-button span {padding:.2em .5em}
-      #time-controls {width:140px;text-align:right;}
-      #slideshow-controls {padding-top: .5em;}
-      #line-controls {vertical-align: top;text-align:right;padding-top:10px;}
-      /* See jQuery UI bug http://bugs.jqueryui.com/ticket/8827 */
-      .ui-buttonset .ui-button {margin:0; margin-right:-1px;}
-      .ui-state-hover, .ui-state-active {z-index:1;}
-      .text img {float:left; margin-right: 1em;}
-      #fulltext a {text-decoration:none; color:#000;}
-      .image {float: right; width:200px;margin-left:2em;}
-      .image h6 {margin:0;color:#999; }
-      .image .caption {font-size:12px;}
-      #svg_legend {width:20px;height:10px;margin:0;}
-      /* ezyang: This is BAD */
-      #color_blue {stroke: #1f77b4; stroke-width: 7px; fill: none;}
-      #color_orange {stroke: #ff7f0e; stroke-width: 7px; fill: none;}
-      #color_green {stroke: #2ca02c; stroke-width: 7px; fill: none;}
-      #color_red {stroke: #d62728; stroke-width: 7px; fill: none;}
-      #color_none {stroke-width:0;}
-      #slideshow-text h2 {margin-top:10px; margin-bottom: 7px;}
-      .lines label {text-align:left; width:14em;}
-      .img_div {width:400px; float:left; padding:0 20px 20px 0;}
-      .img_attr {color:grey; text-align: right; width:400px; display: block; font-family: Verdana; font-size: smaller;}
-.axis path,
-.axis line {
-    fill: none;
-    stroke: #CCC;
-    shape-rendering: crispEdges;
-}
-
-.axis text {
-    font-family: sans-serif;
-    color: #CCC;
-    font-size: 11px;
-}
-    </style>
-  </head>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex" />
+  <meta name="keywords" content="david sabine,dave sabine, #NoManagement, etymology of management, history of manager, book, leanpub.com/nomanagement, no management, management 2.0, self-management, self-organizing, linguistics, language" />
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+  <base target="_top" />
+  <link rel="author" href="//davesabine.com" />
+  <link rel="help" href="//davesabine.com" />
+  <link rel="icon" href="//davesabine.com/favicon.ico" />
+  <link rel="search" href="//google.com/search?q=site:davesabine.com" />
+  <link rel="stylesheet" type="text/css" media="all" href="//davesabine.com/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="//davesabine.com/css/default.css" />
+  <link rel="stylesheet alternate" type="text/css" title="Plain" media="all" href="//davesabine.com/css/no.css" />
+  <link rel="stylesheet" type="text/css" title="David Sabine" media="all" href="css/layout.css" />
+  <link rel="stylesheet" type="text/css" title="David Sabine" media="all" href="css/typeface.css" />
+  <link rel="stylesheet" type="text/css" title="David Sabine" media="all" href="css/decor.css" />
+  <!-- Dependencies -->
+  <script src="//d3js.org/d3.v2.min.js"></script>
+  <script src="jquery-1.8.2.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script src="jquery.fireEvent.js"></script> <!-- fix D3/jQuery interoperability issues -->
+  <script src="ultbuttons.js"></script> <!-- fix jQuery UI bug with checkbox buttons -->
+  <!-- Local js -->
+  <script src="pforce.js"></script>
+  <script src="vector.js"></script>
+  <script src="util.js"></script>
+  <script src="metromap.js"></script>
+  <script src="slideshow.js"></script>
+  <script src="debug.js"></script>
+  <title>David Sabine: Etymology of Management</title>
+</head>
   <body>
     <!--<h1>Metro Maps of the News</h1>-->
     <table>
