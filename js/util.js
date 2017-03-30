@@ -39,7 +39,7 @@ function textrotate(transform) {
 //plugin buttonset vertical
 //http://stackoverflow.com/questions/4098054/vertically-displayed-jquery-buttonset
 $.fn.buttonsetv = function() {
-  $(':radio, :checkbox', this).wrap('<div style="margin: 0px"/>');
+  $(':radio, :checkbox', this).wrap('<div id="davidneedstoseethis" style="margin: 0px"/>');
   $(this).buttonset();
   $('label:first', this).removeClass('ui-corner-left').addClass('ui-corner-top');
   $('label:last', this).removeClass('ui-corner-right').addClass('ui-corner-bottom');
